@@ -1,119 +1,147 @@
-# OOP Java Project Suite
+# 🚀 OOP Java Project Suite
 
-## Author & Credits
+<div align="center">
+  
+[![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.java.com)
+[![Docker](https://img.shields.io/badge/Docker-✓-blue.svg)](https://www.docker.com)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
+
+</div>
+
+
+
+## 👨‍💻 Author & Credits
 **Irakoze Serge**  
-**Student ID: s6980**
+**Student ID: s6980**  
+**Email:irkzsrg@gmail.com**  
+**GitHub: [sir-serge](https://github.com/sir-serge)**
 
 ## 📦 Project Overview
 This repository contains a collection of Java projects that demonstrate Object-Oriented Programming (OOP) principles. Each project is designed to showcase different aspects of OOP, including encapsulation, inheritance, polymorphism, and abstraction.
 
 The projects are built using Java and are containerized with Docker for easy deployment and testing. The main goal of these projects is to provide practical examples of OOP concepts in action.
 
-### Projects Included
-- **StockManagement**: Manage warehouse inventory, suppliers, and stock items interactively.
-- **OnlineShoppingSystem**: Simulate an e-commerce experience with cart, checkout, and multiple product categories.
-- **InsuranceSystem**: Manage vehicle insurance policies, file claims, and generate reports.
+### 🎯 Projects Included
 
-## 🛠️ Quick Start: Clone, Build, and Run Each Project
+#### 1. Stock Management System
+- **Description**: A comprehensive warehouse management solution
+- **Features**:
+  - Inventory tracking
+  - Supplier management
+  - Stock level monitoring
+  - Automated reordering
+  - Detailed reporting
 
-### 1. Clone the Repository
+#### 2. Online Shopping System
+- **Description**: A full-featured e-commerce platform
+- **Features**:
+  - User authentication
+  - Product catalog
+  - Shopping cart
+  - Checkout process
+  - Order management
+  - Multiple payment methods
+
+#### 3. Insurance System
+- **Description**: A vehicle insurance management system
+- **Features**:
+  - Policy management
+  - Claim processing
+  - Customer management
+  - Premium calculation
+  - Report generation
+
+## 🛠️ Prerequisites
+Before you begin, ensure you have the following installed:
+- Java Development Kit (JDK) 17 or higher
+- Docker and Docker Compose
+- Git
+
+## 📥 Installation
+
+### Option 1: Local Development Setup
 ```sh
+# Clone the repository
+git clone https://github.com/sir-serge/irakoze-serge-oop.git
+cd irakaze-serge-oop
+
+# Build the project
+mvn clean install
+```
+
+### Option 2: Docker Setup
+```sh
+# Clone the repository
 git clone https://github.com/sir-serge/irakoze-serge-oop.git
 cd irakaze-serge-oop
 ```
 
-### 2. Build a Project's Docker Image
-Replace `<project-directory>` and `<image-name>` as needed:
-```sh
-cd <project-directory>
-docker build -t <image-name> .
-```
+## 🚀 Usage
 
-#### Examples:
-- StockManagement: `cd StockManagement && docker build -t stock-management .`
-- OnlineShoppingSystem: `cd OnlineShoppingSystem && docker build -t online-shopping-system .`
-- InsuranceSystem: `cd InsuranceSystem && docker build -t insurance-system .`
-
-### 3. Run the Project's Docker Container
-```sh
-docker run --rm -it <image-name>
-```
-
-#### Examples:
-- `docker run --rm -it stock-management`
-- `docker run --rm -it online-shopping-system`
-- `docker run --rm -it insurance-system`
-
-## 🐳 How to Pull and Run Projects from Docker Hub
-Follow these steps to pull and run the projects directly from Docker Hub without building them locally.
-
-### Prerequisites
-- Docker installed on your machine
-- Basic knowledge of Docker commands
-- Internet connection to pull the images from Docker Hub
-- Ensure Docker is running on your machine
-
-### 1. Pull the Image
-Choose the project you want and run the corresponding command:
+### Running with Docker
+Choose your project and run:
 
 #### Stock Management
 ```sh
+cd StockManagement
+docker build -t stock-management .
+docker run --rm -it stock-management
+```
+
+#### Online Shopping System
+```sh
+cd OnlineShoppingSystem
+docker build -t online-shopping-system .
+docker run --rm -it online-shopping-system
+```
+
+#### Insurance System
+```sh
+cd InsuranceSystem
+docker build -t insurance-system .
+docker run --rm -it insurance-system
+```
+
+### Pulling from Docker Hub
+```sh
+# Stock Management
 docker pull sergeIrakoze/stock-management
-```
-
-#### Online Shopping System
-```sh
-docker pull sergeIrakoze/online-shopping-system
-```
-
-#### Insurance System
-```sh
-docker pull sergeIrakoze/insurance-system
-```
-
-### 2. Run the Project
-After pulling, run the project with:
-
-#### Stock Management
-```sh
 docker run --rm -it sergeIrakoze/stock-management
-```
 
-#### Online Shopping System
-```sh
+# Online Shopping System
+docker pull sergeIrakoze/online-shopping-system
 docker run --rm -it sergeIrakoze/online-shopping-system
-```
 
-#### Insurance System
-```sh
+# Insurance System
+docker pull sergeIrakoze/insurance-system
 docker run --rm -it sergeIrakoze/insurance-system
 ```
 
-## 🔗 Docker Hub Links
-- [Stock Management](https://hub.docker.com/r/sergeIrakoze/stock-management)
-- [Online Shopping System](https://hub.docker.com/r/sergeIrakoze/online-shopping-system)
-- [Insurance System](https://hub.docker.com/r/sergeIrakoze/insurance-system)
 
-## 📚 Project Structure
-Each project follows a consistent structure:
-```
-project-name/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── serge/
-│   │               └── projectname/
-│   │                   ├── models/
-│   │                   ├── services/
-│   │                   ├── utils/
-│   │                   └── Main.java
-├── Dockerfile
-└── README.md
-```
+
+## 🔧 Technical Details
+
+### Dependencies
+- Java 
+- Docker
 
 ## 🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Please follow these steps:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+## 📞 Contact
+- **Name**: Irakoze Serge
+- **GitHub**: [sir-serge](https://github.com/sir-serge)
+
+
+---
+
+<div align="center">
+  
+Made with  by Irakoze Serge
+
+</div> 
